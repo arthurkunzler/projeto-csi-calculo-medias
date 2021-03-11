@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Santa Inês - médias</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/body.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/form.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="https://lh3.googleusercontent.com/proxy/K93HtOYtNv_QM27kXVLCD-tPlmdWJkTfL-80V52LKfGspjeP5t7cirpLscnoj1mOK68B6yyNFnCMHN2dEFNGOz_xMzGKv60jgZxVwpfG1k_CJabl7PC8DSs2rBj2jvMKf0KG" alt="Logo" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <aside class="autenticacao">
+            <a href="#login">Login</a>
+            <a href="#registar" class="botao destaque">Registrar</a>
+        </aside> -->
+    </header>
+    <div class="form">
+        <h1>Calcule sua Média</h1>
+        <form name="usuarioForm" action="formulario" method="post">
+            <input type="text" name="nome" placeholder="Nome..." />
+            <input type="text" name="nota1" placeholder="Nota 1º tri..." />
+            <input type="text" name="nota2" placeholder="Nota 2º tri..." />
+            <input type="text" name="nota3" placeholder="Nota 3º tri..." />
+            <button>Ver Resultado</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+
+    <script src="src/js/app.header.js"></script>
+    <script src="src/js/form.js"></script>
+</body>
+
+</html>
